@@ -590,8 +590,9 @@ SOCIAL ICON
 
 .myphoto{
     position: relative;
-    background: url(../../assets/images/photo-frame.png) bottom center no-repeat;
+    /*background: url(../../assets/images/photo-frame.png) bottom center no-repeat;*/
     background-size: contain;
+    border-bottom: 5px solid #68c3a3;
 }
 
 .myphoto img{
@@ -606,7 +607,7 @@ SOCIAL ICON
 .biography ul li{
     padding:5px 0;
     font-size: 16px;
-    border-bottom:1px solid #EEEEEE;
+    border-bottom:2px solid #EEEEEE;
 }
 
 .biography ul li:last-child{
@@ -837,14 +838,15 @@ Resume Timeline
     float: left;
     width: 43%;
     text-align: right;
-    border: 1px solid #eee;
+    border: 1px solid #68c3a3;
     position: relative;
 }
 
 .timeline-content{
     position: relative;
     padding: 24px;
-    background-color: #eaf9ff;
+    background: #68c3a3;
+    color: #fff;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
@@ -852,7 +854,7 @@ Resume Timeline
 }
 
 .timeline-content::after{
-    border: 1px solid #eee;
+    border: 1px solid #eaf9ff;
     width: 100%;
     position: absolute;
     content: "";
@@ -863,8 +865,8 @@ Resume Timeline
 }
 
 .timeline>li .timeline-content:hover {
-    background: #68c3a3;
-    color: #fff;
+    background-color: #eaf9ff;
+    color:#000;
 }
 
 .timeline>li .timeline-panel::before,
@@ -877,7 +879,7 @@ Resume Timeline
 }
 .timeline>li .timeline-panel::before {
     left: 100%;
-    border-left: 12px solid #eaf9ff;
+    border-left: 12px solid #68c3a3;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
@@ -889,7 +891,7 @@ Resume Timeline
 
 .timeline>li.timeline-inverted .timeline-panel::before {
     right: 100%;
-    border-right: 12px solid #ECECEC;
+    border-right: 12px solid #68c3a3;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
@@ -911,27 +913,27 @@ Resume Timeline
 .timeline>li .timeline-panel::after {
     left: 100%;
     margin-left: -2px;
-    border-left: 12px solid #eaf9ff;
+    border-left: 12px solid #68c3a3;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::after {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #eaf9ff;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::after {
     right: 100%;
     margin-right:-2px;
-    border-right: 12px solid #eaf9ff;
+    border-right: 12px solid #68c3a3;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::after {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #eaf9ff;
     border-left: 0;
 }
 
@@ -1801,4 +1803,27 @@ Icon for all respective meta
     border: 5px solid #FFF;
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
+}
+
+#instagram .item img{
+    height: 250px;
+    object-fit: cover;
+}
+
+.owl-prev, .owl-next{
+    width: 30px !important;
+    font-size: 30px !important;;
+    /*border: 0px solid #333 !important;*/
+    background-color:#68c3a3 !important;
+    color:#fff !important;
+    position: relative;
+    bottom: 66px;
+}
+
+.owl-prev{
+    float:left;
+}
+
+.owl-next{
+    float:right;
 }
