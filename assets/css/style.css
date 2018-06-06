@@ -1081,11 +1081,18 @@ Resume Timeline
     min-height: 235px;
 }
 .portfolio-bg{
-   background: #fff;
-   padding: 5px;
-   margin-bottom: 20px;
-   border: 1px solid #eee;
-   border-bottom: 3px double #eee;
+    height: 200px;
+    overflow: hidden;
+    background: #fff;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-bottom: 3px double #eee;
+}
+
+.portfolio-bg .portfolio img {
+    object-fit: cover;
+    height: 200px;
 }
 
 
