@@ -6,13 +6,12 @@
 	$message = @trim(stripslashes($_POST['message'])); 
 
 	if (
-		(!isset($name) || $name == "") ||
-		(!isset($email) || $email == "") ||
-		(!isset($subject) || $subject == "") ||
-		(!isset($message) || $message == "")
-	){
-		$respuesta['respuesta'] = "incomplete";
+		(!isset($name) || $name == "") || 
+		(!isset($email) || $email == "") || 
+		(!isset($subject) || $subject == "") || (!isset($message) || $message == ""))
 	{
+		$respuesta['respuesta'] = "incomplete";
+	}
 
 	$email_from = $email;
 	$email_to = 'ezequiel.estigarribia@gmail.com'; //replace with your email
@@ -30,5 +29,5 @@
 	$res = json_encode($respuesta);
 
 	echo $res;
-	
+
 ?>
