@@ -276,7 +276,7 @@ jQuery(function ($) {
     // Google Map
     // -------------------------------------------------------------
 
-    (function () {
+    /*(function () {
         var myLatlng = new google.maps.LatLng(-37.9876884, -57.5579365);
 
             var styles = [
@@ -339,7 +339,7 @@ jQuery(function ($) {
                 infowindow.open(map, marker);
             });
 
-    }());
+    }());*/
 
 
     // ----------------------------------------
