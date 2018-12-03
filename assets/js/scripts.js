@@ -391,7 +391,11 @@ jQuery(function ($) {
                 $("#respuestaMensaje").removeClass('alert-error')
                 $("#respuestaMensaje").addClass('alert-success');
                 $("#respuestaMensaje").html('Mensaje enviado con exito');
-            }else{
+            } else if (respuesta.respuesta=="incomplete"){
+                $("#respuestaMensaje").removeClass('alert-success');
+                $("#respuestaMensaje").addClass('alert-error');
+                $("#respuestaMensaje").html('Error al enviar el mensaje, complete los campos');              
+            } else {
                 $("#respuestaMensaje").removeClass('alert-success');
                 $("#respuestaMensaje").addClass('alert-error');
                 $("#respuestaMensaje").html('Error al enviar el mensaje, intentelo nuevamente');
