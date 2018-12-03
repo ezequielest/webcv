@@ -378,7 +378,8 @@ jQuery(function ($) {
     // -------------------------------------
     
     $("#contact-form").submit(function(e){
-
+        e.preventDefault();
+        
         var data = {
             name:  $("#InputName1").val(),
             email:  $("#InputEmail1").val(),
