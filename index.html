@@ -1019,7 +1019,6 @@
   <script src="assets/js/moments.min.js"></script>
   <!--<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>-->
   <script src="assets/js/jquery.fitvids.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNn-eu0G2j603qPi8vm6aD6BNNAVBRPXQ"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/typed.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
@@ -1032,17 +1031,13 @@
       $.ajax({
         url: urlInst,
         method: 'GET'
-      }).done(function(data){
-        console.log(data.data);
-
+      }).done(function(data) {
         posts = data.data;
         
         html = "";
         fotoPerfil = "";
         var x = 0;
-        for(x in posts){
-
-    
+        for (x in posts) {
 
           var y = 0;
           for (y in posts[x].tags){
@@ -1060,9 +1055,9 @@
           }
         }
         
-        if (fotoPerfil != ""){
+        if (fotoPerfil != "") {
             $(".myphoto").append('<img src="'+fotoPerfil+'"/>');
-        }else{
+        } else {
             $(".myphoto").append('<img src="assets/images/mifoto.jpg" alt="">');
         }  
 

@@ -379,15 +379,13 @@ jQuery(function ($) {
     
     $("#contact-form").submit(function(e){
         e.preventDefault();
-        
+
         var data = {
             name:  $("#InputName1").val(),
             email:  $("#InputEmail1").val(),
             subject:  $("#InputSubject").val(),
             message:  $("#InputTextarea").val()
         }   
-
-        console.log(data);
 
         $("#respuestaMensaje").html('Enviando mensaje');
         $("#respuestaMensaje").addClass('alert');
