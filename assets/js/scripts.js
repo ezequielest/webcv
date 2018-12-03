@@ -378,13 +378,22 @@ jQuery(function ($) {
     // -------------------------------------
     
     $("#contact-form").submit(function(e){
-        var resultado;
-        e.preventDefault();
+
+        var data = {
+            name:  $("#InputName1").val(),
+            email:  $("#InputEmail1").val(),
+            subject:  $("#InputSubject").val(),
+            message:  $("#InputTextarea").val()
+        }   
+
+        console.log(data);
+
         $("#respuestaMensaje").html('Enviando mensaje');
         $("#respuestaMensaje").addClass('alert');
         $.ajax({
             url:'/assets/php/sendemail.php',
-            method:'POST'
+            method:'POST',
+            data: data
         }).done(function(data){
             respuesta = JSON.parse(data);
             if (respuesta.respuesta=="ok"){

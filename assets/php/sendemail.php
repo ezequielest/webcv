@@ -1,9 +1,9 @@
 <?php
 	$respuesta = [];
-	$name = @trim(stripslashes($_POST['InputName1'])); 
-	$email = @trim(stripslashes($_POST['InputEmail1']));  
-	$subject = @trim(stripslashes($_POST['InputSubject']));  
-	$message = @trim(stripslashes($_POST['InputTextarea'])); 
+	$name = @trim(stripslashes($_POST['name'])); 
+	$email = @trim(stripslashes($_POST['email']));  
+	$subject = @trim(stripslashes($_POST['subject']));  
+	$message = @trim(stripslashes($_POST['message'])); 
 
 	if (
 		(!isset($name) || $name == "") || 
